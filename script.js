@@ -25,7 +25,7 @@ function calculateGeometric() {
   if (r === 1) {
     var result = a * n;
   } else {
-    var result = a * (1 - Math.pow(r, n)) / (1 - r);
+    var result = (a * (1 - Math.pow(r, n))) / (1 - r);
   }
 
   document.getElementById('result').innerText = "Jumlah deret geometri: " + result;
