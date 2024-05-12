@@ -13,7 +13,7 @@ function calculateArithmetic() {
     result += a + i * d;
   }
 
-  document.getElementById('result').innerText = "Jumlah baris aritmatika: " + result;
+  document.getElementById('result').innerText = "Jumlah deret aritmatika: " + result;
 }
 
 function calculateGeometric() {
@@ -31,7 +31,7 @@ function calculateGeometric() {
     result += a * Math.pow(r, i);
   }
 
-  document.getElementById('result').innerText = "Jumlah baris geometri: " + result;
+  document.getElementById('result').innerText = "Jumlah deret geometri: " + result;
 }
 
 function clearInputs() {
