@@ -8,11 +8,7 @@ function calculateArithmetic() {
     return;
   }
 
-  var result = 0;
-  for (var i = 0; i < n; i++) {
-    result += a + i * d;
-  }
-
+  var result = (n / 2) * (2 * a + (n - 1) * d);
   document.getElementById('result').innerText = "Jumlah deret aritmatika: " + result;
 }
 
@@ -26,9 +22,10 @@ function calculateGeometric() {
     return;
   }
 
-  var result = 0;
-  for (var i = 0; i < n; i++) {
-    result += a * Math.pow(r, i);
+  if (r === 1) {
+    var result = a * n;
+  } else {
+    var result = a * (1 - Math.pow(r, n)) / (1 - r);
   }
 
   document.getElementById('result').innerText = "Jumlah deret geometri: " + result;
